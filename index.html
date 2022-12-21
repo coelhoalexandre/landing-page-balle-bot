@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Um bot que ira moderar e deixar a sua comunidade segura de um jeito fácil.">
+    <meta name="description" content="Um bot que ira moderar e deixar a sua comunidade segura de um jeito fácil">
     <title>BalleBot - Modere a sua comunidade do Discord</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="mobile-style.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="style.css" media="screen and (min-width: 768px)">"
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <img src="logo.png" alt="Logo da Comunidade Ballerini">
-        <nav>
+        <div class="headerflex">
+            <img src="logo.png" alt="Logo da Comunidade Ballerini">
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        </div>
+        <nav id="itens">
             <a href="#" target="_self">Comunidade Ballerini</a>
             <a href="#" target="_self">Tutorial</a>
             <a href="#" target="_self">Open Source</a>
@@ -24,21 +29,43 @@
             <div>
                 <h1>Balle Bot</h1>
                 <h2>Deixe a sua comunidade segra de um jeito fácil</h2>
-                <button>Me adicione!</button>
+                <button id="button01">Me adicione!</button>
             </div>
             <img src="balle-bot.png" alt="Imagem da Balle Bot">
+            <button id="button02">Me adicione!</button>
         </section>
 
         <section class="secundario">
             <h3>O que ela faz por você?</h3>
-            <p>1. Cria um <strong>sistema de verificação capcha</strong> para novos membros garantirem que não são robôs</p>
-            <p>2. Possui um <strong>sistema de banimento automático</strong> para links suspeitos que forem enviados na comunidade</p>
-            <p>3. <strong>Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem</p>
+            <p>1. Cria um <strong>sistema de verificação capcha</strong> para novos membros garantirem que não são robôs;</p>
+            <p>2. Possui um <strong>sistema de banimento automático</strong> para links suspeitos que forem enviados na comunidade;</p>
+            <p>3. <strong>Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem.</p>
         </section>
     </main>
 
     <footer>
         <img src="BALLERINI.png" alt="Ballerini">
     </footer>
+
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'flex') {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'flex'
+            }
+        }
+    </script>
 </body>
 </html>

@@ -14,7 +14,7 @@ body {
     background-image: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
 }
 
-header {
+.headerflex {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,10 +27,41 @@ header > img {
 }
 
 span#burguer {
-    display: none;
+    display: block;
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
-header > nav {
+span#burguer:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+    color: black;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+nav > a {
+    /*display: block;*/
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+    /*border-top: 2px solid gray;*/
+}
+
+nav > a:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
+/*header > nav {
     display: flex;
     gap: 0px 8px;
 }
@@ -48,16 +79,17 @@ nav > a {
 nav > a:hover {
     background-color: rgba(236, 214, 196, 0.53);
     transition: 0.2s;
-}
+}*/
 
 main {
     border-top: 0.4px solid #FFF2E7;
     margin-bottom:  48px;
+    padding: 16px;
 }
 
 section.principal {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
@@ -66,6 +98,7 @@ section.principal > div {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    align-items: center;
 }
 
 section.principal > div > h1 {
@@ -80,10 +113,12 @@ section.principal > div > h2 {
     font-weight: 400;
     font-size: 24px;
     color: #ECD6C4;
+    text-align: center;
 }
 
-section.principal > div > button {
+button {
     background-color: #ECD6C4;
+    margin: 15px;
     width: 180px;
     height: 60px;
     border: none;
@@ -97,15 +132,16 @@ section.principal > div > button {
 
 }
 
-section.principal > div > button:hover {
+button:hover {
     background-color: rgba(236, 214, 196, 0.53);
     cursor: pointer;
     transition: 0.2s;
 }
 
-#button02 {
+#button01 {
     display: none;
 }
+
 section.principal > img {
     height: 430px;
 }
