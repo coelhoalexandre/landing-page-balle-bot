@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-image: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+header > img {
+    height: 72px;
+}
+
+header > nav {
+    display: flex;
+    gap: 0px 8px;
+}
+
+nav > a {
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+    font: 400;
+    padding: 18px 24px;
+    border-radius: 8px;
+}
+
+nav > a:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+    transition: 0.2s;
+}
+
+main {
+    border-top: 0.4px solid #FFF2E7;
+    margin-bottom:  48px;
+}
+
+section.principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.principal > div {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+section.principal > div > h1 {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF2E7;
+}
+
+section.principal > div > h2 {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+
+section.principal > div > button {
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2F2325;
+
+}
+
+section.principal > div > button:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+section.principal > img {
+    height: 430px;
+}
+
+section.secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    margin-top: 48px;
+}
+
+section.secundario > h3 {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2E7;
+    margin-bottom: 16px;
+}
+
+section.secundario > p {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ECD6C4;
+}
+
+footer {
+    border-top: 0.4px solid #FFF2E7;
+    padding: 32px;
+}
+
+footer > img {
+    display: block;
+    margin: 0 auto;
+    height: 48px;
+}
